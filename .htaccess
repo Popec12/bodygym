@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# Редирект с www на без www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# 404 страница
+ErrorDocument 404 /404.php
