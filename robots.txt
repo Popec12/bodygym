@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin.php
+Disallow: /profile.php
+Disallow: /logout.php
+Disallow: /assets/uploads/
+Disallow: /submit_order.php
+Disallow: /config_bodygym.php
+
+Sitemap: https://bodygym.ru/sitemap.xml
+Host: https://bodygym.ru
